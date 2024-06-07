@@ -42,8 +42,9 @@
     }
 
     .button_left {
+        width: 350px;
         display: inline-block;
-        background-color: #e8f7ff;
+        background-color: #c2e7ff;
         color: black;
         font-size: 18px;
         padding: 10px 20px;
@@ -55,8 +56,9 @@
     }
 
     .button_right {
+        width: 350px;
         display: inline-block;
-        background-color: #c2e7ff;
+        background-color: #e8f7ff;
         color: black;
         font-size: 18px;
         padding: 10px 20px;
@@ -241,18 +243,6 @@
 
 </main>
 <script>
-
-    // function displayTrendingData(trendingData) {
-    //     var ol = document.querySelector("#trending-data ol");
-    //     ol.innerHTML = ""; // Clear the existing list
-    //     var count = 1; // Biến đếm số thứ tự
-    //     for (var i = 0; i < trendingData.length; i++) {
-    //         var li = document.createElement("li");
-    //         li.textContent = count + ". " + trendingData[i];
-    //         ol.appendChild(li);
-    //         count++; // Tăng biến đếm sau mỗi lần hiển thị
-    //     }
-    // }
     function fetchTrendingData() {
         const country = document.getElementById('country-select').value;
         window.location.href = `?country=${country}`;

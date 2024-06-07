@@ -132,19 +132,40 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# settings.py
-CELERY_BROKER_URL = 'redis://localhost:6379/0'  # URL của Redis broker
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'  # URL của Redis backend
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
-CELERY_TIMEZONE = 'Asia/Ho_Chi_Minh'  # Đặt timezone của bạn
+
 
 from celery.schedules import crontab
 
+# CELERY_TIMEZONE = 'Asia/Ho_Chi_Minh'  # Đặt timezone của bạn
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'UTC'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        
+        'myapp': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    },
+}
+
 CELERY_BEAT_SCHEDULE = {
-    'fetch-trending-data-every-30-minutes': {
-        'task': 'myapp.tasks.fetch_trending_data',
-        'schedule': crontab(minute='*/1'),
+    'print-time-every-minute': {
+        'task': 'myapp.tasks.print_current_time',
+        'schedule': 60,  # 1 minute in seconds
     },
 }

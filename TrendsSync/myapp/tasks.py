@@ -6,6 +6,10 @@ from myapp.models import MyData, ggTrendsDailyData, Country, ggTrendsRealtimeDat
 import urllib.parse
 import datetime
 from celery import shared_task
+import logging
+
+# Cấu hình logger
+logger = logging.getLogger('myapp')
 
 #Hàm updta dữ liệu trend hàng ngày ở Việt Nam
 @shared_task
@@ -72,7 +76,8 @@ def fetch_and_update_data1():
 
 
 @shared_task
-def fetch_and_update_data2():
+# def fetch_and_update_ggTrendsDailyData():
+def print_current_time():
     pytrends = TrendReq()
     countries = [
         {'name': 'Vietnam', 'code': 'VN'},
@@ -102,6 +107,7 @@ def fetch_and_update_data2():
 
 @shared_task
 def fetch_and_update_ggTrendsRealtimeData():
+
     pytrends = TrendReq()
     countries = [
         {'name': 'Vietnam', 'code': 'VN'},
@@ -132,3 +138,7 @@ def fetch_and_update_ggTrendsRealtimeData():
                 content=entry,
                 country=country_code
             )
+
+@shared_task
+def print_current_time1():
+    print("This is a test task")
