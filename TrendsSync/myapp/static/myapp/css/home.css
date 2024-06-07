@@ -1,0 +1,173 @@
+.container {
+    display: inline;
+    flex-wrap: wrap;
+    /* Cho phép các phần tử tự xuống dòng khi không đủ không gian */
+}
+
+.trend-link {
+    /* flex: 1 0 50%;
+    /* Chia đều không gian theo chiều ngang, 2 cột */
+    text-decoration: none;
+    /* Loại bỏ gạch chân mặc định */
+    padding: 10px;
+    /* Khoảng cách giữa các phần tử */
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 50%;
+    height: 100px;
+    align-items: center;
+    justify-self: center;
+}
+
+
+.trend-item {
+    border: 1px solid #ccc;
+    /* Đường viền để phân biệt */
+    padding: 10px;
+    /* Khoảng cách bên trong */
+    margin: 5px;
+    /* Khoảng cách giữa các phần tử */
+}
+
+.logo {
+    font-weight: bold;
+    /* Chữ in đậm */
+}
+
+.trending-text {
+    color: #666;
+    /* Màu chữ */
+}
+
+.google-trend-logo {
+    width: 250px;
+    /* Đặt kích thước của hình ảnh YouTube */
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+.facebook-logo,
+.trending-text {
+    display: inline-block;
+    /* Hiển thị hình ảnh và tiêu đề trên cùng một hàng */
+    vertical-align: middle;
+    /* Căn chữ theo chiều dọc để nằm cùng hàng với hình ảnh */
+    color: var(--text-color);
+}
+
+.facebook-logo {
+    width: 37px;
+    /* Đặt kích thước của hình ảnh YouTube */
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+.trending-text {
+    /* Đặt cỡ chữ cho tiêu đề nhỏ hơn */
+    color: var(--text-color);
+    /* Đặt màu sắc của tiêu đề là đen */
+}
+
+.facebook-header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.twitter-logo,
+.trending-text {
+    display: inline-block;
+    /* Hiển thị hình ảnh và tiêu đề trên cùng một hàng */
+    vertical-align: middle;
+    /* Căn chữ theo chiều dọc để nằm cùng hàng với hình ảnh */
+    color: var(--text-color);
+}
+
+.twitter-logo {
+    width: 60px;
+    /* Đặt kích thước của hình ảnh YouTube */
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+.trending-text {
+    /* Đặt cỡ chữ cho tiêu đề nhỏ hơn */
+    color: var(--text-color);
+    /* Đặt màu sắc của tiêu đề là đen */
+}
+
+.twitter-header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.youtube-logo,
+.trending-text {
+    display: inline-block;
+    /* Hiển thị hình ảnh và tiêu đề trên cùng một hàng */
+    vertical-align: middle;
+    /* Căn chữ theo chiều dọc để nằm cùng hàng với hình ảnh */
+    color: var(--text-color);
+}
+
+.youtube-logo {
+    width: 50px;
+    /* Đặt kích thước của hình ảnh YouTube */
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+.trending-text {
+    /* Đặt cỡ chữ cho tiêu đề nhỏ hơn */
+    color: var(--text-color);
+    /* Đặt màu sắc của tiêu đề là đen */
+}
+
+.youtube-header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+
+
+.trending-topics ul,
+.featured-content .content {
+    list-style-type: none;
+    padding: 0;
+}
+
+.trending-topics ul li,
+.featured-content .post {
+    margin-bottom: 10px;
+}
+
+.search-bar input[type="text"],
+.search-bar button {
+    padding: 10px;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+.featured-content .post a {
+    color: #4CAF50;
+    text-decoration: none;
+}

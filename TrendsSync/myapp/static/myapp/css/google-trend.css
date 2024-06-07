@@ -1,0 +1,203 @@
+.google-trend-logo,
+.trending-text {
+    display: inline-block;
+    /* Hiển thị hình ảnh và tiêu đề trên cùng một hàng */
+    vertical-align: middle;
+    /* Căn chữ theo chiều dọc để nằm cùng hàng với hình ảnh */
+    color: var(--text-color);
+}
+
+.google-trend-logo {
+    margin-left: 40px;
+    width: 150px;
+    /* Đặt kích thước của hình ảnh YouTube */
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+.trending-text {
+    /* Đặt cỡ chữ cho tiêu đề nhỏ hơn */
+    color: var(--text-color);
+    /* Đặt màu sắc của tiêu đề là đen */
+}
+
+.google-trend-header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.button_left {
+    display: inline-block;
+    background-color: #c2e7ff;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button_right {
+    display: inline-block;
+    background-color: #e9f7ff;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button_left:hover {
+    background-color: #c2e7ff;
+}
+
+.button_right:hover {
+    background-color: #c2e7ff;
+}
+
+.dropdown {
+    margin-right: 40px;
+    font-size: 20px;
+    padding: 3px;
+}
+
+#country-select {
+    font-size: 20px;
+    padding: 3px;
+}
+
+.button-container {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#country-select {
+    width: 170px;
+    /* Độ rộng của dropdown */
+    padding: 10px;
+    /* Khoảng cách bên trong */
+    font-size: 18px;
+    /* Cỡ chữ */
+    border: 1px solid #ccc;
+    /* Đường viền */
+    border-radius: 15px;
+    /* Góc bo */
+    background-color: #fff;
+    /* Màu nền */
+    appearance: none;
+    /* Ẩn giao diện mặc định của dropdown */
+    text-align: center;
+    /* Căn giữa nội dung trong dropdown */
+}
+
+/* Hover effect */
+#country-select:hover {
+    border-color: #999;
+    /* Đổi màu đường viền khi hover */
+}
+
+/* Focus effect */
+#country-select:focus {
+    border-color: #007bff;
+    /* Đổi màu đường viền khi focus */
+    outline: none;
+    /* Loại bỏ viền */
+}
+
+/* Arrow icon */
+.dropdown::after {
+    content: '\25BE';
+    /* Mã Unicode của mũi tên xuống */
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    /* Dịch phải ít hơn */
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 20px;
+    /* Kích thước của mũi tên xuống */
+}
+
+
+/* Style option */
+#country-select option {
+    padding: 8px;
+    /* Khoảng cách bên trong */
+    text-align: center;
+    /* Căn giữa nội dung trong các lựa chọn */
+}
+
+/* CSS cho trend-container */
+.trend-container {
+    width: 80%;
+    /* Chiều ngang 80% của phần tử cha */
+    margin: 0 auto;
+    /* Căn giữa theo chiều ngang */
+    padding: 20px;
+    /* Khoảng cách bên trong */
+    background-color: #ffffff;
+    /* Màu nền */
+    border-radius: 10px;
+    /* Bo góc */
+}
+
+/* CSS cho trend-list */
+.trend-list {
+    list-style-type: none;
+    /* Ẩn kiểu danh sách */
+    padding: 0;
+    margin: 0;
+}
+
+/* CSS cho trend-item */
+.trend-item {
+    display: flex;
+    /* Sử dụng flexbox để sắp xếp phần tử con */
+    margin-bottom: 10px;
+    /* Khoảng cách giữa các mục */
+    border-bottom: 1px solid #c4c4c4;
+    /* Đường kẻ nhỏ màu đen phân biệt giữa các listItem */
+}
+
+/* CSS cho trend-index */
+.trend-index {
+    flex: 1;
+    /* Chiếm 1 phần */
+    background-color: #ffffff;
+    /* Màu nền */
+    padding: 10px;
+    /* Khoảng cách bên trong */
+    font-size: 18px;
+    /* Cỡ chữ */
+    color: #333;
+    /* Màu chữ */
+    border-right: 1px solid rgb(255, 251, 243);
+    /* Đường phân biệt bên phải */
+}
+
+/* CSS cho trend-content */
+.trend-content {
+    flex: 19;
+    /* Chiếm 9 phần */
+    background-color: #ffffff;
+    /* Màu nền */
+    padding: 10px;
+    /* Khoảng cách bên trong */
+    font-size: 18px;
+    /* Cỡ chữ */
+    color: #333;
+    /* Màu chữ */
+}

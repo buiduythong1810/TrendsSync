@@ -1,0 +1,36 @@
+{% extends 'myapp/base.html' %}
+
+{% load static %}  <!-- Thêm thẻ này ở đầu template -->
+
+{% block content %}
+<main style="background-color: rgb(255, 251, 243);">
+    <h2 style="text-align: center;">Xin chào!</h2>
+    <h2 style="text-align: center;">Chào mừng đến với TrendsSync.</h2>
+    <div class="container">
+        <a href="#" class="trend-link">
+            <div class="youtube-header">
+                <img src="{% static 'myapp/images/icon-google-trend1.png' %}" alt="Trending Icon" class="google-trend-logo">
+                <!-- <h2 class="trending-text">Google Trend</h2> -->
+            </div>
+        </a>
+        <a href="#" class="trend-link">
+            <div class="youtube-header">
+                <img src="{% static 'myapp/images/icon-youtube2.png' %}" alt="YouTube Logo" class="youtube-logo">
+                <h2 class="trending-text">YouTube Trending</h2>
+            </div>
+        </a>
+        <a href="#" class="trend-link">
+            <div class="facebook-header">
+                <img src="{% static 'myapp/images/icon-facebook.jpg' %}" alt="Facebook Logo" class="facebook-logo">
+                <h2 class="trending-text">Facebook Trending</h2>
+            </div>
+        </a>
+        <a href="#" class="trend-link">
+            <div class="twitter-header">
+                <img src="{% static 'myapp/images/icon-twitter.png' %}" alt="Twitter Logo" class="twitter-logo">
+                <h2 class="trending-text">Twitter Trending</h2>
+            </div>
+        </a>
+    </div>
+</main>
+{% endblock content %}

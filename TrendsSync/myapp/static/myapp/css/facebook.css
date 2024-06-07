@@ -1,0 +1,104 @@
+.facebook-logo,
+.trending-text {
+    display: inline-block;
+    /* Hiển thị hình ảnh và tiêu đề trên cùng một hàng */
+    vertical-align: middle;
+    /* Căn chữ theo chiều dọc để nằm cùng hàng với hình ảnh */
+    color: var(--text-color);
+}
+
+.facebook-logo {
+    width: 37px;
+    /* Đặt kích thước của hình ảnh YouTube */
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+.trending-text {
+    /* Đặt cỡ chữ cho tiêu đề nhỏ hơn */
+    color: var(--text-color);
+    /* Đặt màu sắc của tiêu đề là đen */
+}
+
+.facebook-header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Định dạng cho mỗi item trend */
+.trend-item {
+    margin-bottom: 10px;
+    /* Tạo khoảng cách giữa các item */
+    padding: 10px;
+    /* Tạo khoảng cách bên trong */
+    border: 1px solid #e5e5e5;
+    /* Viền xung quanh */
+    border-radius: 5px;
+    /* Bo góc */
+    display: flex;
+    /* Sử dụng flexbox */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+/* Số thứ tự trend */
+.trend-number {
+    font-weight: bold;
+    /* Đậm */
+    margin-right: 10px;
+    /* Khoảng cách với phần nội dung */
+    display: flex;
+    /* Sử dụng flexbox */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+}
+
+/* Thông tin về trend */
+.trend-info {
+    display: inline-block;
+    /* Hiển thị cùng hàng */
+}
+
+/* Danh mục trend */
+.trend-category {
+    color: blue;
+    /* Màu chữ */
+}
+
+/* Nhãn Trending */
+.trend-label {
+    margin-left: 5px;
+    /* Khoảng cách với danh mục trend */
+}
+
+/* Hashtag */
+.trend-hashtag {
+    color: #000000;
+    /* Màu chữ */
+    font-weight: bold;
+    margin-left: 5px;
+    /* Khoảng cách với nhãn Trending */
+}
+
+/* Mô tả trend */
+.trend-description {
+    display: block;
+    /* Hiển thị thành phần trên dòng mới */
+    color: #666;
+    /* Màu chữ */
+}
+
+.left-section {
+    flex: 5;
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Màu nền */
+    margin-right: 20px;
+    /* Khoảng cách với phần phải */
+    border-radius: 10px;
+    /* Bo góc */
+    width: 90%;
+    margin: 0 auto;
+}

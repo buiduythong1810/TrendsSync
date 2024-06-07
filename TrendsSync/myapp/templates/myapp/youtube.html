@@ -1,0 +1,27 @@
+{% extends 'myapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="header-divider"></div>
+<div style="background-color: rgb(255, 251, 243);">
+    <div style="height: 10px;"></div>
+    <div class="youtube-header">
+        <img src="{% static 'myapp/images/icon-youtube2.png' %}" alt="YouTube Logo" class="youtube-logo">
+        <h2 class="trending-text">YouTube Trending</h2>
+    </div>
+
+    <main id="videos" class="youtube-main">
+        <!-- Video elements will be added here -->
+    </main>
+    <br>
+</div>
+{% endblock content %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'myapp/css/youtube.css' %}">
+{% endblock extra_css %}
+
+{% block extra_js %}
+<script src="{% static 'myapp/js/youtube.js' %}"></script>
+{% endblock extra_js %}

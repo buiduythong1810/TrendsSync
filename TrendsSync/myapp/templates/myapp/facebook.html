@@ -1,0 +1,120 @@
+{% extends 'myapp/base.html' %}
+
+{% load static %} <!-- Thêm thẻ này ở đầu template -->
+
+{% block content %}
+
+<main class="main-content" style="background-color: rgb(255, 251, 243); padding-top: 10px;">
+
+    <div class="facebook-header">
+        <img src="{% static 'myapp/images/icon-facebook.jpg' %}" alt="Facebook Logo" class="facebook-logo">
+        <h2 class="trending-text">Facebook Trending</h2>
+    </div>
+    <br>
+
+    <div class="split-container">
+        <!-- Phần tỉ lệ 7 -->
+        <div class="left-section">
+            <!-- Tiêu đề cho phần trend của Việt Nam -->
+            <div class="title">
+                <h2>Facebook Hashtag trends</h2>
+            </div>
+            <div>
+                <div class="trend-item">
+                    <span class="trend-number">1.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">#Canucks</div>
+                        <div class="trend-description">Trending with Oilers, #EDMvsVAN</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">2.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">LOREAL PARIS X ML</div>
+                        <div class="trend-description">42.3K posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">3.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">Binance</div>
+                        <div class="trend-description">3.11M posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">4.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">#템페스트</div>
+                        <div class="trend-description">6,454 posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">5.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">#WINTERxPoloRalphLauren</div>
+                        <div class="trend-description">130K posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">6.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">Skinner</div>
+                        <div class="trend-description">5,397 posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">7.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">Ian Cole</div>
+                        <div class="trend-description">1,294 posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">8.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">Tkachuk</div>
+                        <div class="trend-description">14.2K posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">9.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">#BBCAN12</div>
+                        <div class="trend-description">14.4K posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">10.</span>
+                    <div class="trend-info">
+                        <!-- <div class="trend-category">NHL Trending</div> -->
+                        <div class="trend-hashtag">#ParisTSTheErasTour</div>
+                        <div class="trend-description">Trending with Swifties</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Danh sách các trend của Việt Nam -->
+            <ul class="trend-list">
+                <!-- Các mục trend sẽ được thêm bằng JavaScript -->
+            </ul>
+        </div>
+        <!-- Phần tỉ lệ 3 (Chúng ta sẽ thêm nội dung cho phần này sau) -->
+
+    </div>
+
+</main>
+
+{% endblock content %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'myapp/css/facebook.css' %}">
+{% endblock extra_css %}

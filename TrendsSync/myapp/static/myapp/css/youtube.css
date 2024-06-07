@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #444343;
+    /* Màu chính */
+    --text-color: #424242;
+    /* Màu chữ */
+    --background-color: #fafcff;
+    /* Màu nền */
+    --button-color: #1084ff;
+    /* Màu nút */
+    --header_color: #ffffff;
+}
+
+/* CSS styles for the video containers */
+
+main {
+    width: 80%;
+    /* Chiều rộng là 80% bề ngang của màn hình */
+    margin: 0 auto;
+    /* Căn giữa theo chiều ngang */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    width: calc(100% - 10px);
+    /* Chiều rộng là 50% của phần main, trừ đi khoảng cách giữa các video */
+    margin-bottom: 20px;
+    /* Khoảng cách giữa các video container */
+    display: flex;
+}
+
+.video {
+    width: 50%;
+    /* Chiều rộng của video */
+    width: 246px;
+    /* Độ rộng của video */
+    height: 138px;
+    border-radius: 5px;
+    /* Bo tròn các góc của video */
+    overflow: hidden;
+    /* Ẩn phần nội dung vượt ra ngoài phần bo tròn */
+    position: relative;
+    /* Tạo vị trí tương đối cho video */
+}
+
+.video video {
+    width: 100%;
+    /* Đảm bảo video lấp đầy phần video */
+    height: 100%;
+    /* Đảm bảo video lấp đầy phần video */
+}
+
+
+
+.video-info h3 {
+    margin: 0 0 10px;
+    color: var(--text-color);
+    /* Khoảng cách giữa tiêu đề video và các thông tin khác */
+}
+
+.video-info {
+    width: 70%;
+    /* Chiều rộng của thông tin video */
+    padding: 0 10px;
+    /* Khoảng cách giữa thông tin video và video */
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng kích thước của phần tử */
+    overflow: hidden;
+    /* Ẩn nội dung vượt ra ngoài phần tử */
+    color: rgb(113, 113, 113);
+}
+
+.video-title {
+    font-weight: bold;
+    line-height: 1.2;
+    /* Chiều cao của mỗi dòng là 1.2 lần kích thước font */
+    max-height: 2.4em;
+    /* Giới hạn số dòng là 2. Dòng cao là 1.2em, nên 2.4em sẽ giới hạn số dòng là 2 */
+    overflow: hidden;
+    /* Ẩn phần vượt quá giới hạn */
+    text-overflow: ellipsis;
+    /* Hiển thị dấu ba chấm khi vượt quá giới hạn */
+    white-space: normal;
+    /* Đảm bảo text wrap bình thường */
+    color: var(--text-color);
+}
+
+.video-description {
+    line-height: 1.2;
+    /* Chiều cao của mỗi dòng là 1.2 lần kích thước font */
+    max-height: 2.4em;
+    /* Giới hạn số dòng là 2. Dòng cao là 1.2em, nên 2.4em sẽ giới hạn số dòng là 2 */
+    overflow: hidden;
+    /* Ẩn phần vượt quá giới hạn */
+    text-overflow: ellipsis;
+    /* Hiển thị dấu ba chấm khi vượt quá giới hạn */
+    white-space: normal;
+    /* Đảm bảo text wrap bình thường */
+    color: var(--text-color);
+}
+
+main {
+    width: 80%;
+    /* Chiều rộng là 80% bề ngang của màn hình */
+    margin: 0 auto;
+    /* Căn giữa theo chiều ngang */
+}
+
+.youtube-main {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.youtube-logo,
+.trending-text {
+    display: inline-block;
+    /* Hiển thị hình ảnh và tiêu đề trên cùng một hàng */
+    vertical-align: middle;
+    /* Căn chữ theo chiều dọc để nằm cùng hàng với hình ảnh */
+    color: var(--text-color);
+}
+
+.youtube-logo {
+    width: 50px;
+    /* Đặt kích thước của hình ảnh YouTube */
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+.trending-text {
+    /* Đặt cỡ chữ cho tiêu đề nhỏ hơn */
+    color: var(--text-color);
+    /* Đặt màu sắc của tiêu đề là đen */
+}
+
+.youtube-header {
+    text-align: center;
+    margin-bottom: 5px;
+}

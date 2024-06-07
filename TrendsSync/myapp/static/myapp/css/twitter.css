@@ -1,0 +1,161 @@
+.twitter-logo,
+.trending-text {
+    display: inline-block;
+    /* Hiển thị hình ảnh và tiêu đề trên cùng một hàng */
+    vertical-align: middle;
+    /* Căn chữ theo chiều dọc để nằm cùng hàng với hình ảnh */
+    color: var(--text-color);
+}
+
+.twitter-logo {
+    width: 60px;
+    /* Đặt kích thước của hình ảnh YouTube */
+    margin-right: 10px;
+    /* Tạo khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+.trending-text {
+    /* Đặt cỡ chữ cho tiêu đề nhỏ hơn */
+    color: var(--text-color);
+    /* Đặt màu sắc của tiêu đề là đen */
+}
+
+.twitter-header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Định dạng chung cho split-container */
+.split-container {
+    display: flex;
+}
+
+/* Phần tỉ lệ 7 (left-section) */
+.left-section {
+    flex: 5;
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Màu nền */
+    margin-right: 20px;
+    /* Khoảng cách với phần phải */
+    border-radius: 10px;
+    /* Bo góc */
+}
+
+/* Tiêu đề */
+.title h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Danh sách trend */
+.trend-list {
+    list-style: none;
+    padding: 0;
+
+}
+
+/* Mỗi mục trong danh sách */
+.trend-item {
+    margin-bottom: 10px;
+}
+
+/* Định dạng cho phần tỉ lệ 3 (right-section) (sẽ được thêm sau) */
+.right-section {
+    flex: 3;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    height: 300px;
+}
+
+/* Định dạng cho mỗi item trend */
+.trend-item {
+    margin-bottom: 10px;
+    /* Tạo khoảng cách giữa các item */
+    padding: 10px;
+    /* Tạo khoảng cách bên trong */
+    border: 1px solid #e5e5e5;
+    /* Viền xung quanh */
+    border-radius: 5px;
+    /* Bo góc */
+    display: flex;
+    /* Sử dụng flexbox */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+/* Số thứ tự trend */
+.trend-number {
+    font-weight: bold;
+    /* Đậm */
+    margin-right: 10px;
+    /* Khoảng cách với phần nội dung */
+    display: flex;
+    /* Sử dụng flexbox */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+}
+
+/* Thông tin về trend */
+.trend-info {
+    display: inline-block;
+    /* Hiển thị cùng hàng */
+}
+
+/* Danh mục trend */
+.trend-category {
+    color: blue;
+    /* Màu chữ */
+}
+
+/* Nhãn Trending */
+.trend-label {
+    margin-left: 5px;
+    /* Khoảng cách với danh mục trend */
+}
+
+/* Hashtag */
+.trend-hashtag {
+    color: #000000;
+    /* Màu chữ */
+    font-weight: bold;
+    margin-left: 5px;
+    /* Khoảng cách với nhãn Trending */
+}
+
+/* Mô tả trend */
+.trend-description {
+    display: block;
+    /* Hiển thị thành phần trên dòng mới */
+    color: #666;
+    /* Màu chữ */
+}
+
+.location-section .container {
+    display: flex;
+}
+
+.left-section1 {
+    flex: 9;
+    padding-right: 4px;
+    /* Khoảng cách giữa left và right section */
+}
+
+.right-section1 {
+    flex: 1;
+    display: flex;
+}
+
+/* Checkbox */
+.right-section input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.container:hover {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    padding: 2px;
+}

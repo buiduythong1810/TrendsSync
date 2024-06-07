@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendsSync</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/home.css' %}">
+    {% block extra_css %}
+    
+    {% endblock extra_css %}
+
+    
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'myapp/images/logo1.png' %}" alt="Trending Icon" class="trending-icon">
+            <h1 class="header-title">TrendsSync</h1>
+        </div>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="{% url 'home' %}">Trang chủ</a></li>
+                <li><a href="{% url 'display_daily_trending' %}">Google Trend</a></li>
+                <li><a href="{% url 'youtube' %}">Youtube</a></li>
+                <li><a href="{% url 'facebook' %}">Facebook</a></li>
+                <li><a href="{% url 'twitter' %}">Twitter</a></li>
+            </ul>
+        </nav>
+        <button class="login-btn">Đăng nhập</button>
+    </header>
+    <div class="content">
+        {% block content %}
+        <!-- Nội dung động sẽ được chèn vào đây -->
+        {% endblock content %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TrendsSync.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+{% extends 'myapp/base.html' %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'myapp/css/twitter.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="header-divider"></div>
+
+<main class="main-content" style="background-color: rgb(255, 251, 243); padding-top: 10px;">
+    <div class="twitter-header">
+        <img src="{% static 'myapp/images/icon-twitter.png' %}" alt="Twitter Logo" class="twitter-logo">
+        <h2 class="trending-text">Twitter Trending</h2>
+    </div>
+
+    <div class="split-container">
+        <div class="left-section">
+            <div class="title">
+                <h2>Vietnam Trending</h2>
+            </div>
+            <div>
+                <div class="trend-item">
+                    <span class="trend-number">1.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">#Canucks</div>
+                        <div class="trend-description">Trending with Oilers, #EDMvsVAN</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">2.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">LOREAL PARIS X ML</div>
+                        <div class="trend-description">42.3K posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">3.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">Binance</div>
+                        <div class="trend-description">3.11M posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">4.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">#템페스트</div>
+                        <div class="trend-description">6,454 posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">5.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">#WINTERxPoloRalphLauren</div>
+                        <div class="trend-description">130K posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">6.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">Skinner</div>
+                        <div class="trend-description">5,397 posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">7.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">Ian Cole</div>
+                        <div class="trend-description">1,294 posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">8.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">Tkachuk</div>
+                        <div class="trend-description">14.2K posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">9.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">#BBCAN12</div>
+                        <div class="trend-description">14.4K posts</div>
+                    </div>
+                </div>
+                <div class="trend-item">
+                    <span class="trend-number">10.</span>
+                    <div class="trend-info">
+                        <div class="trend-hashtag">#ParisTSTheErasTour</div>
+                        <div class="trend-description">Trending with Swifties</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="trend-list">
+                <!-- Các mục trend sẽ được thêm bằng JavaScript -->
+            </ul>
+        </div>
+        <div class="right-section">
+            <div class="location-section">
+                <h3>Location</h3>
+                <br>
+                <div class="container">
+                    <div class="left-section1">
+                        <div>
+                            <p>Show content in this location</p>
+                            <p style="color: #6d6d6d;">When this is on, you’ll see what’s happening around you right
+                                now.</p>
+                        </div>
+                    </div>
+                    <div class="right-section1">
+                        <input type="checkbox" id="location-checkbox">
+                    </div>
+                </div>
+                <br>
+
+                <div class="container">
+                    <div class="left-section1">
+                        <div>
+                            <span>Explore locations</span>
+                            <p style="color: #6d6d6d; font-size: 20px;">Vietnam</p>
+                        </div>
+                    </div>
+                    <div class="right-section1">
+                        <p style="color: #6d6d6d;">></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}

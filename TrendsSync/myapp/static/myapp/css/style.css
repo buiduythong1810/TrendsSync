@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #333333;
+    /* Màu chính */
+    --text-color: #424040;
+    /* Màu chữ */
+    --background-color: #fafcff;
+    /* Màu nền */
+    --button-color: #1084ff;
+    /* Màu nút */
+    --header_color: #ffffff;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--header_color);
+    color: #000;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-nav {
+    margin-left: 20px;
+}
+
+main {
+    background-color: #fff;
+    color: #222;
+    padding: 2rem;
+}
+
+footer {
+    background-color: var(--header_color);
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.login-btn {
+    font-weight: bold;
+    margin-right: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.trending-icon {
+    width: 50px;
+    /* Đặt kích thước chiều rộng của hình ảnh */
+    height: 50px;
+    /* Đặt kích thước chiều cao của hình ảnh */
+    object-fit: cover;
+    /* Thu gọn hình ảnh vào hình vuông */
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.trending-icon,
+.header-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.header-title {
+    margin-left: 10px;
+    /* Tạo khoảng cách giữa hình ảnh và chữ */
+}
+
+.header-divider {
+    width: 100%;
+    /* Chiều rộng của đường line */
+    height: 2px;
+    /* Chiều cao của đường line */
+    background-color: rgb(237, 239, 240);
+    /* Màu sắc của đường line */
+}
